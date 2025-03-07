@@ -8,50 +8,32 @@
 </head>
 <body>
 
-    <h1 class="title">TuneSphere</h1>
+    <!-- 🟥 Título de la página -->
+    <h1 id="title">TuneSphere</h1>
 
-    <div class="music-list">
-        <div class="song" onclick="playSong('expresso.mp3', 'Expresso', 'Short n’ Sweet', 'Sabrina Carpenter', 'expresso.jpg')">
-            <img src="expresso.jpg" alt="Expresso" class="album-cover">
-            <div class="song-info">
-                <div class="song-title">Expresso</div>
-                <div class="song-album">Short n’ Sweet</div>
-                <div class="song-artist">Sabrina Carpenter</div>
+    <!-- 🎵 Lista de canciones -->
+    <div id="song-list"></div>
+
+    <!-- 🎧 Reproductor de música -->
+    <div id="player-container">
+        <div id="player">
+            <img id="song-cover" src="" alt="Cover">
+            <div id="song-info">
+                <h2 id="song-title"></h2>
+                <p id="song-album"></p>
+                <p id="song-artist"></p>
             </div>
-        </div>
-
-        <div class="song" onclick="playSong('flowers.mp3', 'Flowers', 'Endless Summer Vacation', 'Miley Cyrus', 'flowers.jpg')">
-            <img src="flowers.jpg" alt="Flowers" class="album-cover">
-            <div class="song-info">
-                <div class="song-title">Flowers</div>
-                <div class="song-album">Endless Summer Vacation</div>
-                <div class="song-artist">Miley Cyrus</div>
+            <audio id="audio"></audio>
+            <div id="controls">
+                <button id="prev">⏮</button>
+                <button id="play">▶</button>
+                <button id="next">⏭</button>
             </div>
-        </div>
-    </div>
-
-    <!-- Mini Reproductor -->
-    <div class="mini-player" id="miniPlayer" onclick="openPlayer()">
-        <img src="" id="miniCover" class="mini-cover">
-        <div class="mini-title" id="miniTitle"></div>
-    </div>
-
-    <!-- Reproductor Completo -->
-    <div class="player-screen" id="playerScreen">
-        <div class="player-content">
-            <img src="" id="playerCover" class="player-cover">
-            <h2 id="playerTitle"></h2>
-            <h3 id="playerAlbum"></h3>
-            <h4 id="playerArtist"></h4>
-
-            <audio id="audioPlayer" ontimeupdate="updateProgress()"></audio>
-
-            <input type="range" id="progressBar" value="0" max="100" onclick="seek(event)">
-
-            <div class="controls">
-                <button onclick="prevSong()">⏮️</button>
-                <button onclick="togglePlay()">▶️</button>
-                <button onclick="nextSong()">⏭️</button>
+            <div id="progress-container">
+                <div id="progress"></div>
+            </div>
+            <div id="time-info">
+                <span id="current-time">0:00</span> / <span id="duration">0:00</span>
             </div>
         </div>
     </div>
