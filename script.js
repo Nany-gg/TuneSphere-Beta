@@ -15,11 +15,11 @@ let songs = [
         cover: "https://drive.google.com/uc?export=download&id=1M7BJ1jj-3g2H63xY6Z_CObBUIWDvBH_H"
     },
     { 
-        src: "https://drive.google.com/uc?export=download&id=ID_DE_ANTIFRAGILE", https://drive.google.com/file/d/1VfvRJJq5Sid7qeobzx62wzuZ2eaEC-Qf/view?usp=drivesdk
+        src: "https://drive.google.com/uc?export=download&id=1VfvRJJq5Sid7qeobzx62wzuZ2eaEC-Qf", 
         title: "Bed Chem", 
         album: "Short n’ Sweet", 
         artist: "Sabrina Carpenter", 
-        cover: "https://drive.google.com/uc?export=download&id=ID_DE_PORTADA_ANTIFRAGILE"
+        cover: "https://drive.google.com/uc?export=download&id=1MJF7kEeaf8Ej_b4zr9U1dtUWziWRGmRX"
     }
 ];
 
